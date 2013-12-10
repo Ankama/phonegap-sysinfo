@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="com.ankamagames.plugins.sysinfo"
+    version="0.1.0">
+
+	<name>Sysinfo</name>
+	<author>Fabien Ryckoort</author>
+
+	<description>
+		This plugin allows you to get various system information like memory, cpu...
+	</description>
+
+	<license>MIT</license>
+
+	<js-module src="www/Sysinfo.js" name="Sysinfo">
+		<clobbers target="Sysinfo" />
+	</js-module>
+
+	<engines>
+		<engine name="cordova" version="&gt;=3.0.0" />
+	</engines>
+
+	<platform name="android">
+		<config-file target="res/xml/config.xml" parent="/*">
+			<feature name="Sysinfo" >
+				<param name="android-package" value="com.ankamagames.plugins.sysinfo.Sysinfo"/>
+			</feature>
+		</config-file>
+		<source-file src="src/android/Sysinfo.java"
+					target-dir="src/com/ankamagames/plugins/sysinfo" />
+			<!--<source-file src="src/android/myfile.jar"
+			target-dir="libs" />-->
+	</platform>
+
+</plugin>
