@@ -1,6 +1,6 @@
-# Sysinfo
+# phonegap-sysinfo
 
-> Sysinfo plugin for android (iOS and WP in progress) allow you to get information about memory available, total... and number of CPU Cores, max frequency for each cores
+> Sysinfo plugin for android (iOS and WP in progress) allow you to get information about memory (avail, total...) and cpu (count cores, frequency)
 
 ## Installation:
 
