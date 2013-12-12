@@ -9,7 +9,7 @@
 Add the following feature tag in your config.xml
 
 	<feature name="Sysinfo" >
-		< param name="android-package" value="com.ankamagames.plugins.sysinfo.Sysinfo"/>
+		<param name="android-package" value="com.ankamagames.plugins.sysinfo.Sysinfo"/>
 	</feature>
 
 This plugin is based on [plugman](https://github.com/apache/cordova-plugman). to install it to your app,
@@ -31,7 +31,7 @@ To use this plugin with PhoneGap Build, add the following plugin reference to yo
 	<gap:plugin name="com.ankamagames.plugins.sysinfo" />
 
 ## Usage
-The plugin creates the object `window.Sysinfo
+The plugin creates global object window.Sysinfo
 
 After onDeviceReady, you can access to Sysinfo global variable
 
